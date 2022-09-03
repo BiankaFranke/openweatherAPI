@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+        <form id="searchArea">
+          <input type="text" placeholder="type in a city" name="location" id='location'/>
+          <input type="submit" value="Search" id="search"></input>
+        </form>
+
+        <section class="displayWeather" id="weatherApp">
+            <h1 class="name">Weather in <span id="name">London</span>,<span id="cityCountry">GB</span></h1>
+            <div id="tempCity">
+                <p id="cityTemp"></p>
+                <div>
+                    <p id="cityTempMin"></p>
+                    <p id="cityTempMax"></p>
+                </div>
+                <p id="cloud"></p>
+                <p id="icon"></p>
+                <p id="rain"></p>
+                <p id="date"></p>
+            </div>
+            
+            <div class="city" id="city">
+                <p id="cityTime"></p>
+                <p id="cityWindSpeed"></p>
+                <p id="cityWindDeg"></p>
+                <p id="cloudiness"></p>
+                <p id="humidity"></p>
+                <p id="pressure"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+                <div id="geoCoords">
+                    <p id="lon"></p>
+                    <p id="lat"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
