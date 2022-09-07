@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nova+Mono&display=swap');
 
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ main {
     justify-content: center;
     font-family: 'Comfortaa', sans-serif;
     color: #f6e4c4;
+    margin-top: 10vh;
 }
 
 .name {
@@ -24,10 +27,15 @@ h1 {
     font-size: 4rem;
     font-family: 'Nova Mono', sans-serif;
     text-align: center;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
 }
+
+/* IDs */
 
 #weatherApp {
     display: flex;
+    justify-content: center;
     min-width: 60vw;
     min-height: 80vh;
     flex-direction: column;
@@ -36,18 +44,20 @@ h1 {
 }
 
 #weatherDatas {
-    min-width: 70vw;
-    min-height: 40vh;
-    margin-top: 3rem;
+    margin: 3rem 0rem;
     display: flex;
-    align-items: space-around;
     justify-content: space-around;
 }
 
 #otherInfo {
     display: flex;
-    /* align-items: flex-start; */
+    align-items: center;
     justify-content: space-around;
+}
+
+#iconTemp {
+    display: flex;
+    flex-direction: column;
 }
 
 #inputs{
@@ -57,20 +67,25 @@ h1 {
     gap: 1rem;
 }
 
-.descrip {
-    display: flex;
-    margin: 0.4rem 0rem 0rem 0rem;
-}
-
 #cityTemp, #weatherDatas .name {
     font-size: 2rem;
     color: #29c6cd;
     font-weight: 600;
 }
 
+/* classes */
+
+.descrip {
+    display: flex;
+    margin: 0.4rem 0rem 0rem 0rem;
+}
+
 .label {
     display: none;
+    padding-right: 1rem;
 }
+
+/* input fields */
 
 input[type='text'] {
     min-width: 20vw;
@@ -88,11 +103,4 @@ input[type='submit'] {
     color: #f19584;
     min-width: 8vw;
     min-height: 5vh;
-};
-
-#test {
-    display: flex;
-
-    color: red;
-    text-decoration: overline;
 }

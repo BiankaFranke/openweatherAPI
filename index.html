@@ -9,104 +9,105 @@
   </head>
   <body>
     <main>
-        <section id="weatherApp">
-          <div id="form">
-            <h1>Weather in <span class="name">..City..</span>, <span id="cityCountry">..Country..</span></h1>
-            <form id="searchArea">
-              <div id="inputs">
-                <input type="text" placeholder="type in a city" name="location" id='location'/>
-                <input type="submit" value="Search" id="search"></input>
-              </div>
-            </form>
-          </div>
+      <section id="weatherApp">
+        <div id="form">
+          <h1>
+            Weather in <span class="name">..City..</span>,
+            <span id="cityCountry">..Country..</span>
+          </h1>
+          <form id="searchArea">
+            <div id="inputs">
+              <input
+                type="text"
+                placeholder="type in a city"
+                name="location"
+                id="location"
+              />
+              <input type="submit" value="Search" id="search" />
+            </div>
+          </form>
+        </div>
 
-          <div id="weatherDatas">
-              <div>
-                <div>
-                  <p class="name"></p>
-                </div>
-                <div>
-                  <p id="date"></p>
-                  <div class="descrip">
-                    <p class="label">Humidity: </p>
-                    <p id="humidity"></p>
-                  </div>
-                </div>
-                <div class="descrip">
-                  <p class="label">Pressure: </p>
-                  <p id="pressure"></p>
-                </div>
-              </div>
-
-              <div class="descrip" id="test">
-                <p id="cityTemp"></p>
-                <p id="icon"></p>
-              </div>
-          </div>
-
-          <div id="otherInfo">
+        <div id="weatherDatas">
+          <div>
             <div>
+              <p class="name"></p>
+            </div>
+            <div>
+              <p id="date"></p>
               <div class="descrip">
-                <p class="label">Cloudiness: </p>
-                <p id="cloud"></p>
+                <p class="label">Humidity:</p>
+                <p id="humidity"></p>
               </div>
-              <div id="tempTotal">
-                <div class="descrip">
-                  <p class="label">min. Temperature: </p>
-                  <p id="cityTempMin"></p>
-                </div>
-                <div class="descrip">
-                  <p class="label">max. Temperature: </p>
-                  <p id="cityTempMax"></p>
-                </div>
+            </div>
+            <div class="descrip">
+              <p class="label">Pressure:</p>
+              <p id="pressure"></p>
+            </div>
+          </div>
+
+          <div class="descrip" id="iconTemp">
+            <p id="cityTemp"></p>
+            <p id="icon"></p>
+            <p id="cloud"></p>
+          </div>
+        </div>
+
+        <div id="otherInfo">
+          <div>
+            <div id="tempTotal">
+              <div class="descrip">
+                <p class="label">min. Temperature:</p>
+                <p id="cityTempMin"></p>
               </div>
-  
-              <div >
-                <div class="descrip">
-                  <p class="label">Wind Speed: </p>
-                  <p id="cityWindSpeed"></p>
-                </div>
-  
-                <div class="descrip">
-                  <p class="label">Wind Degree: </p>
-                  <p id="cityWindDeg"></p>
-                </div>
+              <div class="descrip">
+                <p class="label">max. Temperature:</p>
+                <p id="cityTempMax"></p>
               </div>
             </div>
 
             <div>
               <div class="descrip">
-                <p class="label">Rain 1h: </p>
-                <p id="rain"></p>
+                <p class="label">Wind Speed:</p>
+                <p id="cityWindSpeed"></p>
               </div>
-              <div>
-                <p id="cityTime"></p>
-                <p id="cloudiness"></p>
-              </div>
-              <div>
-                <div class="descrip">
-                  <p class="label">Sunrise: </p>
-                  <p id="sunrise"></p>
-                </div>
 
-                <div class="descrip">
-                  <p class="label">Sunset: </p>
-                  <p id="sunset"></p>
-                </div>
+              <div class="descrip">
+                <p class="label">Wind Degree:</p>
+                <p id="cityWindDeg"></p>
               </div>
-              <div>
-                <div class="descrip">
-                  <p class="label">Longitude: </p>
-                  <p id="lon"></p>
-                </div>
-                <div class="descrip">
-                  <p class="label">Latitude: </p>
-                  <p id="lat"></p>
-                </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="descrip">
+              <p class="label">Cloudiness:</p>
+              <p id="cloudiness"></p>
+            </div>
+            <div>
+              <div class="descrip">
+                <p class="label">Sunrise:</p>
+                <p id="sunrise"></p>
               </div>
+
+              <div class="descrip">
+                <p class="label">Sunset:</p>
+                <p id="sunset"></p>
+              </div>
+            </div>
+            <div>
+              <div class="descrip">
+                <p class="label">Longitude:</p>
+                <p id="lon"></p>
+              </div>
+              <div class="descrip">
+                <p class="label">Latitude:</p>
+                <p id="lat"></p>
+              </div>
+            </div>
           </div>
-          </div>
-        </section>
+        </div>
+      </section>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
